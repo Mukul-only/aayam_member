@@ -11,6 +11,7 @@ const MemberDetails = (props) => {
         <img
           src={props.path}
           className="w-48 h-48 duration-300 object-fit bg-dark_bg rounded-xl group-hover:scale-110 "
+          alt="profile_pic"
         />
       </div>
       <div className="px-2 my-2">

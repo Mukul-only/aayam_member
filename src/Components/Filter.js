@@ -23,14 +23,14 @@ const Filter = (props) => {
     setType("NEW JOINEE");
   };
   const nameClickHandler = () => {
-    if (byName != 1) {
+    if (byName !== 1) {
       props.onSort("byName");
       setByName(1);
       setByRoll(0);
     }
   };
   const rollClickHandler = () => {
-    if (byRoll != 1) {
+    if (byRoll !== 1) {
       props.onSort("byRoll");
       setByRoll(1);
       setByName(0);
