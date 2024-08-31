@@ -58,7 +58,7 @@ function App() {
       id: "d7",
       path: require("./assets/profile_11.png"),
       name: "Saanvi",
-      roll: "205124101",
+      roll: "205123053",
       type: "CORE TEAM",
       des: "Lorem ipsum dolor sit amet, consectet",
     },
