@@ -10,7 +10,7 @@ const MemberDetails = (props) => {
       <div className="overflow-hidden rounded-xl">
         <img
           src={props.path}
-          className="w-48 h-48 duration-300 object-fit bg-dark_bg rounded-xl group-hover:scale-110 "
+          className="object-cover w-48 h-48 duration-300 bg-dark_bg rounded-xl group-hover:scale-110 "
           alt="profile_pic"
         />
       </div>
