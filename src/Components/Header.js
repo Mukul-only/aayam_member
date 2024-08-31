@@ -17,6 +17,8 @@ const Header = (props) => {
       }
     });
   };
+  if (filterFlag !== props.filterFlag) setFilterFlag(props.filterFlag);
+
   return (
     <div className="border-b-2 border-[#2C2C2C] mb-4">
       <Card className="flex items-center justify-between py-2">

@@ -13,20 +13,24 @@ const Filter = (props) => {
   const coreTeamClickHandler = () => {
     props.onType("CORE TEAM");
     setType("CORE TEAM");
+    props.onFilter(0);
   };
   const alumniClickHandler = () => {
     props.onType("ALUMNI");
     setType("ALUMNI");
+    props.onFilter(0);
   };
   const newClickHandler = () => {
     props.onType("NEW JOINEE");
     setType("NEW JOINEE");
+    props.onFilter(0);
   };
   const nameClickHandler = () => {
     if (byName !== 1) {
       props.onSort("byName");
       setByName(1);
       setByRoll(0);
+      props.onFilter(0);
     }
   };
   const rollClickHandler = () => {
@@ -34,6 +38,7 @@ const Filter = (props) => {
       props.onSort("byRoll");
       setByRoll(1);
       setByName(0);
+      props.onFilter(0);
     }
   };
 

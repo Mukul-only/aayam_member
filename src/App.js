@@ -48,7 +48,7 @@ function App() {
     },
     {
       id: "d6",
-      path: require("./assets/profile_9.jpg"),
+      path: require("./assets/profile_9.png"),
       name: "Devansh",
       roll: "205124001",
       type: "CORE TEAM",
@@ -93,6 +93,8 @@ function App() {
   const [sortBy, setSortBy] = useState("");
   const filterHandler = (filter) => {
     setFilter(filter);
+
+    console.log(filter);
   };
   const typeHandler = (type) => {
     setType(type);
@@ -104,8 +106,13 @@ function App() {
 
   return (
     <>
-      <Header onFilter={filterHandler} />
-      <Filter filter={filter} onType={typeHandler} onSort={sortHandler} />
+      <Header onFilter={filterHandler} filterFlag={filter} />
+      <Filter
+        filter={filter}
+        onType={typeHandler}
+        onSort={sortHandler}
+        onFilter={filterHandler}
+      />
       <MemberHeader />
       <MemberBody type={type} items={data} sortBy={sortBy} />
     </>

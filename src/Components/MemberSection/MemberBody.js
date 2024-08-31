@@ -14,11 +14,11 @@ const MemberBody = (props) => {
   }
 
   return (
-    <Card className="my-12">
+    <Card className="my-12 ">
       <div className="mx-auto w-fit text-primary font-bold text-xs md:text-md tracking-[0.2rem] md:tracking-[0.4rem] bg-dark_bg md:px-4 md:py-2  px-3 py-1 rounded-full border-[1.5px] border-light_gray">
         {props.type}
       </div>
-      <div className="flex flex-wrap justify-center gap-2 mt-16 md:justify-start ">
+      <div className="flex flex-wrap justify-center gap-1 p-2 mt-16 border border-dark_bg rounded-2xl md:justify-start ">
         {filterMembers.length === 0 ? (
           <div className="flex flex-col items-center justify-center mx-auto font-bold md:text-xl text-light_gray">
             <SVG svg={empty} />
